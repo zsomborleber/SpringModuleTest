@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Új űrhajó</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+    <form data-th-object="${newShip}">
+
+        <select data-th-field="*{spaceShipClass}">
+            <option data-th-each="shipClass : ${shipClasses}"
+                    data-th-value="${shipClass}"
+                    data-th-text="${shipClass}">
+            </option>
+        </select>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>
