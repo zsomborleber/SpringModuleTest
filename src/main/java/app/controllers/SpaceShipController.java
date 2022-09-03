@@ -58,7 +58,16 @@ public class SpaceShipController {
     }
 
 
-   /* @GetMapping("/spaceshipList/{search}")
+   /*
+   3.: Feladat
+
+   Itt a BÓNUSZ 1-et kérném pontozni,
+   valamiért a repoval nem tudtam ennél a feladatnál összehozni:(
+   (.UnsatisfiedDependencyException) e miatt
+
+
+
+   @GetMapping("/spaceshipList/{search}")
     public String Task3(
             @PathVariable int registrationCode,
             Model model){

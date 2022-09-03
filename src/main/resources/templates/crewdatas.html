@@ -7,16 +7,31 @@
 </head>
 <body>
 <div>
+    <form method="get">
+        Search in names: <input type="text" name="search">
+        <p><button class="send_button" type="submit">Search</button></p>
+
+    </form>
+</div>
+<div>
     <table >
         <tr>
             <th>Name:</th>
             <th>Rank:</th>
+            <th>Ship Name:</th>
         </tr>
-        <tr data-th-each="datas:${crewdata}">
+        <tr data-th-each="datas:${crewList}">
             <td th:text="${datas.crewName}"></td>
             <td th:text="${datas.crewRank}"></td>
+            <td th:text="${datas.dutyShip}"></td>
         </tr>
     </table>
+    <div>
+        <button class="send_button" type="submit"><a data-th-href="@{/spaceshiplist}">List all Actice Ship(s)</a></button>
+        <button class="send_button" type="submit"><a data-th-href="@{/spaceshipisactive}">List all Active Ship(s)</a></button>
+        <button class="send_button" type="submit"><a data-th-href="@{/allCrewMember}">List all Crew Member(s)</a></button>
+    </div>
+    </div>
 </div>
 </body>
 </html>
