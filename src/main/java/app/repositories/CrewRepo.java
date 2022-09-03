@@ -7,6 +7,5 @@ import java.util.List;
 
 public interface CrewRepo extends CrudRepository<Crew,Long> {
 
-    List<Crew>findAllByDutyShipContaining(int search);
 
 }

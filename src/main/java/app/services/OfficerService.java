@@ -26,7 +26,7 @@ public class OfficerService implements UserDetailsService {
         if (username == null) {
             throw new UsernameNotFoundException("User not found");
         }
-        return new Officer();
+        return officerRepo.findAllByUsername(username);
     }
 
 }

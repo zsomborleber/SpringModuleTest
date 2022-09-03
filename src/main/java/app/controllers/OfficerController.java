@@ -1,5 +1,6 @@
 package app.controllers;
 
+import app.configs.WebSecConfig;
 import app.models.Officer;
 import app.repositories.OfficerRepo;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -11,11 +12,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class OfficerController {
 
-
+    private final WebSecConfig webSecConfig;
     private final OfficerRepo officerRepo;
 
-    public OfficerController(OfficerRepo officerRepo) {
+    public OfficerController(OfficerRepo officerRepo,WebSecConfig webSecConfig) {
         this.officerRepo = officerRepo;
+        this.webSecConfig = webSecConfig;
     }
 
     @GetMapping("/login")
