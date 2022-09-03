@@ -14,8 +14,7 @@ import javax.persistence.PersistenceContext;
 public class OfficerService implements UserDetailsService {
 
     private final OfficerRepo officerRepo;
-    @PersistenceContext
-    private EntityManager manager;
+
 
     public OfficerService(OfficerRepo officerRepo) {
         this.officerRepo = officerRepo;

@@ -10,17 +10,30 @@
 <body>
 
 <div id="container">
+        <form data-th-action="@{/spaceship}" data-th-object="${newShip}" method="post">
 
-    <form data-th-object="${newShip}">
+            <table>
+                <tr>
+                    <th>Space Ship Class:
+                        <select data-th-field="*{spaceShipClass}">
+                            <option data-th-each="shipClass : ${shipClasses}"
+                                    data-th-value="${shipClass}"
+                                    data-th-text="${shipClass}">
+                            </option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Ship Name:</th>
+                    <td><input type="text" data-th-field="*{name}"></td>
+                </tr>
+                <tr>
+                    <button type="submit">New Ship</button>
+                </tr>
+            </table>
+        </form>
 
-        <select data-th-field="*{spaceShipClass}">
-            <option data-th-each="shipClass : ${shipClasses}"
-                    data-th-value="${shipClass}"
-                    data-th-text="${shipClass}">
-            </option>
-        </select>
 
-    </form>
 
 </div>
 
