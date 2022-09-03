@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crew</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div>
+    <table >
+        <tr>
+            <th>Name:</th>
+            <th>Rank:</th>
+        </tr>
+        <tr data-th-each="datas:${crewdata}">
+            <td th:text="${datas.crewName}">Name</td>
+            <td th:text="${datas.crewRank}">Spaceship Class</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
