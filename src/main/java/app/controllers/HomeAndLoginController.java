@@ -12,7 +12,7 @@ public class HomeAndLoginController {
         return "index";
     }
 
-    @GetMapping(value = {"/login", "/bejelentkezes"})
+    @GetMapping(value = { "/bejelentkezes"})
     public String getLoginPage() {
         return "login";
     }

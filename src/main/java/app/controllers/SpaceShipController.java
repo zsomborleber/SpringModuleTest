@@ -48,14 +48,15 @@ public class SpaceShipController {
     }
 
 
-    @GetMapping("/spaceshipList/{search}")
+   /* @GetMapping("/spaceshipList/{search}")
     public String Task3(
             @PathVariable int registrationCode,
             Model model){
         List<Crew> crewList = (List<Crew>) crewRepo.findAll();
         model.addAttribute("crewdata",crewList);
         return "crewdatas";
-    }
+    }*/
+    
 
 
 
