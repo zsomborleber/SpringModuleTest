@@ -11,8 +11,8 @@ Figyelem!
 Nem kell neked új projektet létrehoznod.
 
 <b>Forkold a SpringModuleTest nevű projektet, majd clone-ozd a saját felhasználóneved alatt létrejött projektet! A megoldásodat commit-old és push-old!
-Amikor elkészültél, küldd el a GitHub-os projekted linkjét nekünk Slack-en (Balázsnak és Riának is)!
-Bár nem elvárás, azonban érdemes munka közben gyakran commit-olnod és push-olnod, mert így biztosan nem fog elveszni a munkád.</b>
+Amikor elkészültél, küldd el a GitHub-os projekted linkjét nekünk Slack-en (Balázsnak és Riának is)!</b><br>
+<i>Bár nem elvárás, azonban érdemes munka közben gyakran commit-olnod és push-olnod, mert így biztosan nem fog elveszni a munkád.</i>
 
 Megoldásokat nem fogadjuk el a fentiektől eltérő formában és/vagy módon.
 Tehát a megoldást nem fogadjuk el tömörített mappaként, Google Drive-on megosztott fájlokként, képformátumban, pdf-formátumban, emailben küldve stb. Továbbá nem fogadjuk el, ha más projekt-struktúrával küldöd el a megoldásodat.
