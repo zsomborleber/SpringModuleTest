@@ -2,6 +2,10 @@
 
 ---
 
+A feladatok a projekten belül a docs mappában találhatóak. A fájl neve: Tasks.pdf.
+
+---
+
 Figyelem!
 
 Nem kell neked új projektet létrehoznod.
